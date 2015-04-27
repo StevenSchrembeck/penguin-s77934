@@ -1,0 +1,14 @@
+{
+  "name": "penguin",
+  "version": "0.1.0",
+  "author": "Safari Books Online",
+  "description": "A Backbone scaffold",
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/safarijv/penguin"
+  	},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.6.3"
+  }
+}

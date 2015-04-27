@@ -1,7 +1,8 @@
-### Setup, cd to index.html in penguin folder and run python SimpleHTTPServer
-	cd penguin
-	python -m SimpleHTTPServer [port]
+### Setup
+	cd penguin // cd to index.html in the penguin folder
+	python -m SimpleHTTPServer [port] // run python SimpleHTTPServer
 
+Visit the site in a browser, http://localhost.com:[port]
 
 ### Use jshint if you want
 

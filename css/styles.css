@@ -1,0 +1,26 @@
+.books {
+	width: 380px;
+}
+.book {
+	border-bottom: 1px solid black;
+	margin: 10px 5px;
+	min-height: 60px;
+	padding: 10px 0;
+}
+.description {
+	font-size: 12px;
+	height: 60px;
+	overflow: hidden
+}
+.author {
+	text-overflow: ellipsis;
+}
+.title {
+	font-size: 16px;
+	font-weight: bold;
+}
+.image {
+	float: left;
+	height: 50px;
+	margin: 5px;
+}

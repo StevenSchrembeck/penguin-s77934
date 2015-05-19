@@ -1,14 +1,15 @@
 
 define(function (require) {
     var Backbone = require('backbone'),
-    Model;
+		Model = require('app/Model'),
+		Book;
 
-  Model = Backbone.Model.extend({
+  Book = Model.extend({
     defaults: {
 		title: "Hello"
     }
 
   });
 
-  return Model;
+  return Book;
 });

@@ -1,7 +1,8 @@
 define(function (require) {
   var Backbone = require('backbone'),
-    View = require('app/View'),
-    Collection = require('app/Collection'),
+    BooksView = require('app/BooksView'),
+    Books = require('app/Books'),
+    Book = require('app/Book'),
     AppRouter;
 
   AppRouter = Backbone.Router.extend({
@@ -9,7 +10,9 @@ define(function (require) {
       "": "index"
     },
     index: function() {
-      var view = new View({ collection: new Collection() });
+		var books = new Books(),
+			booksView;
+		booksView = new BooksView({ collection: books });
     }
   });
 

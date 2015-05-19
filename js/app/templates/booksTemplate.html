@@ -1,0 +1,15 @@
+<div class="books">
+	<h1>Books:</h1>
+	<% _.each(books, function(book) { %>
+		<div class="book"> <% /* Consider breaking out into separate bookTemplate */ %>
+			<% if (book.get("volumeInfo").imageLinks && book.get("volumeInfo").imageLinks.smallThumbnail ){ %>
+				<img class="image" src="<%- book.get("volumeInfo").imageLinks.smallThumbnail %>"/>
+			<% } %>		
+			<span class="title"> <%- book.get("volumeInfo").title %></span>
+			<span class="author">By: <%- book.get("volumeInfo").authors.join(" ") %></span>
+			<% if (book.get("volumeInfo").description) { %>
+				<div class="description"><%-  (book.get("volumeInfo").description.length > 160) ? book.get("volumeInfo").description.substring(0, 160) + " ..."  : book.get("volumeInfo").description %></div>
+			<% } %>		
+		</div>
+	<% }); %>
+</div>

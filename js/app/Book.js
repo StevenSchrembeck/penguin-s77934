@@ -5,9 +5,6 @@ define(function (require) {
 		Book;
 
   Book = Model.extend({
-    defaults: {
-		title: "Hello"
-    }
 
   });
 
